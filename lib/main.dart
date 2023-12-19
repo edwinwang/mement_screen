@@ -7,7 +7,7 @@ import 'dart:convert';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final themeStr = await rootBundle.loadString('assets/theme_default.json');
+  final themeStr = await rootBundle.loadString('assets/dark_theme.json');
   final themeJson = jsonDecode(themeStr);
   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
   runApp(MyApp(theme: theme));
@@ -45,43 +45,42 @@ class _MyHomePageState extends State<MyHomePage> {
     const PlaceholderPage(pageName: 'My Stuff'),
   ];
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+      bottomNavigationBar: NavigationBar(
+        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+        onDestinationSelected: (int index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        destinations: const <Widget>[
+          NavigationDestination(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.explore),
             label: 'Explore',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.tv),
             label: 'TV Shows',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.movie),
             label: 'Movies',
           ),
-          BottomNavigationBarItem(
+          NavigationDestination(
             icon: Icon(Icons.account_circle),
             label: 'My Stuff',
           ),
         ],
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
+        selectedIndex: _selectedIndex,
       ),
     );
   }
