@@ -1,0 +1,63 @@
+
+swagger: "2.0"
+info:
+  description: "Access to trending movies from The Movie Database (TMDb)."
+  version: "1.0.0"
+  title: "TMDb Trending Movies API"
+host: "api.themoviedb.org"
+basePath: "/3"
+schemes:
+- "https"
+paths:
+  /trending/movie:
+    get:
+      summary: "Get trending movies"
+      description: "Retrieve a list of movies that are trending on TMDb."
+      operationId: "getTrendingMovies"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "api_key"
+        in: "query"
+        description: "Your personal API key for authentication."
+        required: true
+        type: "string"
+      - name: "page"
+        in: "query"
+        description: "Specify which page of results to return."
+        required: false
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            $ref: "#/definitions/TrendingMoviesResponse"
+definitions:
+  TrendingMoviesResponse:
+    type: "object"
+    properties:
+      page:
+        type: "integer"
+      results:
+        type: "array"
+        items:
+          $ref: "#/definitions/Movie"
+      total_pages:
+        type: "integer"
+      total_results:
+        type: "integer"
+  Movie:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+      title:
+        type: "string"
+      release_date:
+        type: "string"
+      popularity:
+        type: "number"
+      vote_average:
+        type: "number"
+      vote_count:
+        type: "integer"

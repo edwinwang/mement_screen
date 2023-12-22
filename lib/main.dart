@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:json_theme/json_theme.dart';
 import 'package:flutter/services.dart';
-import 'home_page.dart';
-import 'placeholder_page.dart';
+import 'views/home_page.dart';
+import 'views/placeholder_page.dart';
 import 'dart:convert';
 
 void main() async {

@@ -1,0 +1,424 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/8GnWDLn2AhnmkQ7hlQ9NJUYobSS.jpg",
+      "id": 695721,
+      "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+      "original_language": "en",
+      "original_title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+      "overview": "64 years before he becomes the tyrannical president of Panem, Coriolanus Snow sees a chance for a change in fortunes when he mentors Lucy Gray Baird, the female tribute from District 12.",
+      "poster_path": "/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        878,
+        28
+      ],
+      "popularity": 578.642,
+      "release_date": "2023-11-15",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 791
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ktHEdqmMWC1wdfPRMRCTZe2OISL.jpg",
+      "id": 1071215,
+      "title": "Thanksgiving",
+      "original_language": "en",
+      "original_title": "Thanksgiving",
+      "overview": "After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the holiday. Picking off residents one by one, what begins as random revenge killings are soon revealed to be part of a larger, sinister holiday plan.",
+      "poster_path": "/9JlAR3guePnHo5ysuFHs62P1QlE.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        53,
+        9648
+      ],
+      "popularity": 182.178,
+      "release_date": "2023-11-16",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 121
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/r9oTasGQofvkQY5vlUXglneF64Z.jpg",
+      "id": 1029575,
+      "title": "The Family Plan",
+      "original_language": "en",
+      "original_title": "The Family Plan",
+      "overview": "Dan Morgan is many things: a devoted husband, a loving father, a celebrated car salesman. He's also a former assassin. And when his past catches up to his present, he's forced to take his unsuspecting family on a road trip unlike any other.",
+      "poster_path": "/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        35
+      ],
+      "popularity": 450.174,
+      "release_date": "2023-12-14",
+      "video": false,
+      "vote_average": 7.586,
+      "vote_count": 210
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gg4zZoTggZmpAQ32qIrP5dtnkEZ.jpg",
+      "id": 891699,
+      "title": "Silent Night",
+      "original_language": "en",
+      "original_title": "Silent Night",
+      "overview": "A tormented father witnesses his young son die when caught in a gang's crossfire on Christmas Eve. While recovering from a wound that costs him his voice, he makes vengeance his life's mission and embarks on a punishing training regimen in order to avenge his son's death.",
+      "poster_path": "/wwbZHlYF0vGsBiyDwDsKAmjoRF6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        80
+      ],
+      "popularity": 176.63,
+      "release_date": "2023-11-30",
+      "video": false,
+      "vote_average": 6.6,
+      "vote_count": 52
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aNG1BSIULxbHtUmBiar0i3fR1S4.jpg",
+      "id": 520758,
+      "title": "Chicken Run: Dawn of the Nugget",
+      "original_language": "en",
+      "original_title": "Chicken Run: Dawn of the Nugget",
+      "overview": "A band of fearless chickens flock together to save poultry-kind from an unsettling new threat: a nearby farm that's cooking up something suspicious.",
+      "poster_path": "/exNtEY8QUuQh9e23wSQjkPxKIU3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751
+      ],
+      "popularity": 536.477,
+      "release_date": "2023-12-08",
+      "video": false,
+      "vote_average": 7.628,
+      "vote_count": 137
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bckxSN9ueOgm0gJpVJmPQrecWul.jpg",
+      "id": 572802,
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
+      "poster_path": "/8xV47NDrjdZDpkVcCFqkdHa3T0C.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 732.187,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 18
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kF9o9P7LEUJA0SpUHlQ3M1MbUlA.jpg",
+      "id": 507532,
+      "title": "Finestkind",
+      "original_language": "en",
+      "original_title": "Finestkind",
+      "overview": "Two brothers are pulled into a deal with an organized crime syndicate in Boston.",
+      "poster_path": "/90D6sXfbXKhDpd4S1cHICdAe8VD.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "popularity": 122.275,
+      "release_date": "2023-09-08",
+      "video": false,
+      "vote_average": 7.616,
+      "vote_count": 43
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/yOm993lsJyPmBodlYjgpPwBjXP9.jpg",
+      "id": 787699,
+      "title": "Wonka",
+      "original_language": "en",
+      "original_title": "Wonka",
+      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
+      "poster_path": "/usJcUVupBLbvhr5xHQKc8UPguWp.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        10751,
+        14
+      ],
+      "popularity": 1055.923,
+      "release_date": "2023-12-06",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 351
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/50stq3Jlny6oEgJjsXbQvbajCNw.jpg",
+      "id": 1020006,
+      "title": "Priscilla",
+      "original_language": "en",
+      "original_title": "Priscilla",
+      "overview": "When teenage Priscilla Beaulieu meets Elvis Presley at a party, the man who is already a meteoric rock-and-roll superstar becomes someone entirely unexpected in private moments: a thrilling crush, an ally in loneliness, a vulnerable best friend.",
+      "poster_path": "/o0nZbsA02THHSlF3O9vAbHCzYA3.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "popularity": 162.593,
+      "release_date": "2023-10-27",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 65
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "id": 872585,
+      "title": "Oppenheimer",
+      "original_language": "en",
+      "original_title": "Oppenheimer",
+      "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+      "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "popularity": 620.394,
+      "release_date": "2023-07-19",
+      "video": false,
+      "vote_average": 8.129,
+      "vote_count": 5485
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tLsc8SCFO0rMVgVyNm9XtfnyX84.jpg",
+      "id": 726209,
+      "title": "Leave the World Behind",
+      "original_language": "en",
+      "original_title": "Leave the World Behind",
+      "overview": "A family's getaway to a luxurious rental home takes an ominous turn when a cyberattack knocks out their devices—and two strangers appear at their door.",
+      "poster_path": "/29rhl1xopxA7JlGVVsf1UHfYPvN.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        18,
+        9648,
+        53,
+        878
+      ],
+      "popularity": 667.343,
+      "release_date": "2023-11-22",
+      "video": false,
+      "vote_average": 6.566,
+      "vote_count": 915
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1X7vow16X7CnCoexXh4H4F2yDJv.jpg",
+      "id": 466420,
+      "title": "Killers of the Flower Moon",
+      "original_language": "en",
+      "original_title": "Killers of the Flower Moon",
+      "overview": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one—until the FBI steps in to unravel the mystery.",
+      "poster_path": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        80,
+        18,
+        36
+      ],
+      "popularity": 993.283,
+      "release_date": "2023-10-18",
+      "video": false,
+      "vote_average": 7.595,
+      "vote_count": 1501
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bWIIWhnaoWx3FTVXv6GkYDv3djL.jpg",
+      "id": 940721,
+      "title": "Godzilla Minus One",
+      "original_language": "ja",
+      "original_title": "ゴジラ-1.0",
+      "overview": "In postwar Japan, a new terror rises. Will the devastated people be able to survive... let alone fight back?",
+      "poster_path": "/hkxxMIGaiCTmrEArK7J56JTKUlB.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        878,
+        27,
+        28
+      ],
+      "popularity": 405.256,
+      "release_date": "2023-11-03",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 149
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+      "id": 346698,
+      "title": "Barbie",
+      "original_language": "en",
+      "original_title": "Barbie",
+      "overview": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+      "poster_path": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        35,
+        12,
+        14
+      ],
+      "popularity": 417.412,
+      "release_date": "2023-07-19",
+      "video": false,
+      "vote_average": 7.172,
+      "vote_count": 6358
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/k1KrbaCMACQiq7EA0Yhw3bdzMv7.jpg",
+      "id": 901362,
+      "title": "Trolls Band Together",
+      "original_language": "en",
+      "original_title": "Trolls Band Together",
+      "overview": "When Branch's brother, Floyd, is kidnapped for his musical talents by a pair of nefarious pop-star villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd from a fate even worse than pop-culture obscurity.",
+      "poster_path": "/bkpPTZUdq31UGDovmszsg2CchiI.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        10751,
+        10402,
+        14,
+        35
+      ],
+      "popularity": 870.95,
+      "release_date": "2023-10-12",
+      "video": false,
+      "vote_average": 7.175,
+      "vote_count": 383
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mowTk9LFSr8rW3EG2CUSwzuvx0g.jpg",
+      "id": 1160164,
+      "title": "TAYLOR SWIFT | THE ERAS TOUR",
+      "original_language": "en",
+      "original_title": "TAYLOR SWIFT | THE ERAS TOUR",
+      "overview": "The cultural phenomenon continues on the big screen! Immerse yourself in this once-in-a-lifetime concert film experience with a breathtaking, cinematic view of the history-making tour.",
+      "poster_path": "/jf3YO8hOqGHCupsREf5qymYq1n.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        10402
+      ],
+      "popularity": 239.005,
+      "release_date": "2023-10-13",
+      "video": false,
+      "vote_average": 8.228,
+      "vote_count": 167
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg",
+      "id": 507089,
+      "title": "Five Nights at Freddy's",
+      "original_language": "en",
+      "original_title": "Five Nights at Freddy's",
+      "overview": "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
+      "poster_path": "/7BpNtNfxuocYEVREzVMO75hso1l.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "popularity": 532.417,
+      "release_date": "2023-10-25",
+      "video": false,
+      "vote_average": 7.819,
+      "vote_count": 2889
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/35z8hWuzfFUZQaYog8E9LsXW3iI.jpg",
+      "id": 335977,
+      "title": "Indiana Jones and the Dial of Destiny",
+      "original_language": "en",
+      "original_title": "Indiana Jones and the Dial of Destiny",
+      "overview": "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.",
+      "poster_path": "/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "popularity": 247.26,
+      "release_date": "2023-06-28",
+      "video": false,
+      "vote_average": 6.673,
+      "vote_count": 2321
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ptz5ETMxDoRRiE69BVuIxJzyTEO.jpg",
+      "id": 940551,
+      "title": "Migration",
+      "original_language": "en",
+      "original_title": "Migration",
+      "overview": "After a migrating duck family alights on their pond with thrilling tales of far-flung places, the Mallard family embarks on a family road trip, via New York City, to tropical Jamaica.",
+      "poster_path": "/ldfCF9RhR40mppkzmftxapaHeTo.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751
+      ],
+      "popularity": 319.081,
+      "release_date": "2023-12-06",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kjQBrc00fB2RjHZB3PGR4w9ibpz.jpg",
+      "id": 670292,
+      "title": "The Creator",
+      "original_language": "en",
+      "original_title": "The Creator",
+      "overview": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war—and mankind itself.",
+      "poster_path": "/vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        18
+      ],
+      "popularity": 519.98,
+      "release_date": "2023-09-27",
+      "video": false,
+      "vote_average": 7.132,
+      "vote_count": 1497
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}

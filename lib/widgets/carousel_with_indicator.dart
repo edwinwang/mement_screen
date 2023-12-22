@@ -32,7 +32,7 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicator> {
             autoPlay: true,
             enlargeCenterPage: true,
             viewportFraction: 1.0,
-            height: MediaQuery.of(context).size.height * 0.6,
+            height: MediaQuery.of(context).size.height * 0.5,
             // aspectRatio: MediaQuery.of(context).size.aspectRatio,
             onPageChanged: (index, reason) {
               setState(() {
