@@ -9,9 +9,7 @@ class ApiConfig {
 
   static const String tmdbApiImageBaseUrl = 'https://image.tmdb.org/t/p/';
 
-  static const String tmdbApiImageSize = 'w154';
-
-  static const String tmdbApiImageSizeBackdrop = 'w300';
+  static const String tmdbApiImageSizeBackdrop = 'w1280';
 
   static const String tmdbApiImageSizePoster = 'w154';
 
@@ -19,13 +17,17 @@ class ApiConfig {
 
   static const String tmdbApiImageSizeLogo = 'w45';
 
-  static const String tmdbApiImageSizeStill = 'w300';
-
   static const String tmdbApiImageSizeW500 = 'w500';
 
-  static const String tmdbApiImageSizeW780 = 'w780';
+  static String tmdbApiMovieDetail(String movieId) {
+    return '${tmdbApiBaseUrl}movie/$movieId?api_key=$tmdbApiKey&append_to_response=credits';
+  }
 
-  static const String tmdbApiImageSizeW1280 = 'w1280';
+  static String tmdbApiMovieDayTrending() {
+    return '${tmdbApiBaseUrl}trending/movie/day?api_key=$tmdbApiKey&page=1';
+  }
 
-  static const String tmdbApiImageSizeOriginal = 'original';
+  static String tmdbApiMovieBackdrop(String movieId) {
+    return '$tmdbApiImageBaseUrl$tmdbApiImageSizeBackdrop$movieId';
+  }
 }

@@ -27,8 +27,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
 
   Future<void> fetchMovieDetail() async {
     final response = await http.get(
-      Uri.parse(
-          '${ApiConfig.tmdbApiBaseUrl}/movie/${widget.movieId}?api_key=${ApiConfig.tmdbApiKey}'),
+      Uri.parse(ApiConfig.tmdbApiMovieDetail(widget.movieId.toString())),
     );
 
     if (response.statusCode == 200) {
@@ -49,128 +48,120 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
       );
     }
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          // Background image
-          DecoratedBox(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("$imgBasePath${movieDetail?.backdropPath}"),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          // Black gradient overlay
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.transparent, Colors.black.withOpacity(0.7)],
-              ),
-            ),
-          ),
-          // Content
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+      body: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.6,
+            child: Stack(
               children: <Widget>[
-                // Top back button
-                IconButton(
-                  icon: const Icon(Icons.arrow_back),
-                  onPressed: () {
-                    // Handle back action
-                    Navigator.pop(context);
-                  },
+                // Background image
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(ApiConfig.tmdbApiMovieBackdrop(
+                          movieDetail!.backdropPath!)),
+                      fit: BoxFit.fitHeight,
+                    ),
+                  ),
                 ),
-                // Center play button and movie details
-                Column(
-                  children: <Widget>[
-                    // Movie title and other details
-                    Text(
-                      movieDetail?.title ?? '',
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    // Movie attributes
-                    const Text(
-                      '',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    // Play button
-                    IconButton(
-                      icon: const Icon(Icons.play_circle_filled),
-                      iconSize: 64,
-                      onPressed: () {
-                        // Handle play action
-                      },
-                    ),
-                    // Movie description
-                    Text(
-                      movieDetail?.overview ?? '',
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    ),
-                    // Director and cast
-                    const Text(
-                      'Directed by Wu Ma\nStarring Meng Fei, Chen Xing, Lu Yi Lung',
-                      style: TextStyle(fontSize: 12),
-                    ),
-                  ],
-                ),
-                // Bottom icons and labels
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: const Icon(Icons.add),
-                          onPressed: () {
-                            // Add to My List action
-                          },
+                Container(
+                    decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.black54,
+                      Colors.transparent,
+                      Colors.black87,
+                    ],
+                  ),
+                )),
+                // Content
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      // Top back button
+                      IconButton(
+                        icon: const Icon(Icons.arrow_back),
+                        onPressed: () {
+                          // Handle back action
+                          Navigator.pop(context);
+                        },
+                      ),
+                      // Center play button and movie details
+                      Positioned(
+                        left: 16.0,
+                        right: 16.0,
+                        bottom: 16.0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            // 电影信息
+                            Text(
+                              movieDetail?.getFormattedDateAndRuntime() ?? "",
+                              style: Theme.of(context).textTheme.bodyLarge,
+                            ),
+                            const SizedBox(height: 4.0), // 添加一点垂直间距
+                            // 电影标题
+                            Text(
+                              movieDetail?.title ?? "",
+                              style: Theme.of(context).textTheme.headlineSmall,
+                            ),
+                            const SizedBox(height: 4.0), // 添加一点垂直间距
+                            // 类型标签
+                            Text(
+                              movieDetail?.getFormattedGenres() ?? "",
+                              style: Theme.of(context).textTheme.bodyLarge,
+                            ),
+                            const SizedBox(height: 16.0), // 添加一点垂直间距
+                            // 底部的图标和文字
+                            Row(
+                              children: <Widget>[
+                                // CC图标和文字
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8.0, vertical: 2.0),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(4.0),
+                                  ),
+                                  child: Text(
+                                    'CC',
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
+                                  ),
+                                ),
+                                const SizedBox(width: 8.0), // 添加一点水平间距
+                                // R图标和文字
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 8.0, vertical: 2.0),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black.withOpacity(0.5),
+                                    borderRadius: BorderRadius.circular(4.0),
+                                  ),
+                                  child: Text(
+                                    'R',
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
-                        const Text('My List')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: const Icon(Icons.thumb_down),
-                          onPressed: () {
-                            // Not for Me action
-                          },
-                        ),
-                        const Text('Not for Me')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: const Icon(Icons.thumb_up),
-                          onPressed: () {
-                            // Like movie action
-                          },
-                        ),
-                        const Text('Like')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        IconButton(
-                          icon: const Icon(Icons.share),
-                          onPressed: () {
-                            // Share movie action
-                          },
-                        ),
-                        const Text('Share')
-                      ],
-                    ),
-                  ],
+                      ),
+                      // Bottom icons and labels
+                    ],
+                  ),
                 ),
               ],
             ),
           ),
+          const Text("text"),
         ],
       ),
     );
