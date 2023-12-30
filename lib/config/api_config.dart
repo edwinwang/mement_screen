@@ -20,7 +20,7 @@ class ApiConfig {
   static const String tmdbApiImageSizeW500 = 'w500';
 
   static String tmdbApiMovieDetail(String movieId) {
-    return '${tmdbApiBaseUrl}movie/$movieId?api_key=$tmdbApiKey&append_to_response=credits';
+    return '${tmdbApiBaseUrl}movie/$movieId?api_key=$tmdbApiKey&append_to_response=credits,certifications';
   }
 
   static String tmdbApiMovieDayTrending() {

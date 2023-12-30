@@ -53,7 +53,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.6,
             child: Stack(
-              children: <Widget>[
+              children: [
                 // Background image
                 Container(
                   decoration: BoxDecoration(
@@ -72,7 +72,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     colors: [
                       Colors.black54,
                       Colors.transparent,
-                      Colors.black87,
+                      Colors.black,
                     ],
                   ),
                 )),
@@ -102,7 +102,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                             // 电影信息
                             Text(
                               movieDetail?.getFormattedDateAndRuntime() ?? "",
-                              style: Theme.of(context).textTheme.bodyLarge,
+                              style: Theme.of(context).textTheme.labelMedium,
                             ),
                             const SizedBox(height: 4.0), // 添加一点垂直间距
                             // 电影标题
@@ -114,43 +114,9 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                             // 类型标签
                             Text(
                               movieDetail?.getFormattedGenres() ?? "",
-                              style: Theme.of(context).textTheme.bodyLarge,
+                              style: Theme.of(context).textTheme.labelMedium,
                             ),
-                            const SizedBox(height: 16.0), // 添加一点垂直间距
-                            // 底部的图标和文字
-                            Row(
-                              children: <Widget>[
-                                // CC图标和文字
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8.0, vertical: 2.0),
-                                  decoration: BoxDecoration(
-                                    color: Colors.black.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(4.0),
-                                  ),
-                                  child: Text(
-                                    'CC',
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall,
-                                  ),
-                                ),
-                                const SizedBox(width: 8.0), // 添加一点水平间距
-                                // R图标和文字
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8.0, vertical: 2.0),
-                                  decoration: BoxDecoration(
-                                    color: Colors.black.withOpacity(0.5),
-                                    borderRadius: BorderRadius.circular(4.0),
-                                  ),
-                                  child: Text(
-                                    'R',
-                                    style:
-                                        Theme.of(context).textTheme.bodySmall,
-                                  ),
-                                ),
-                              ],
-                            ),
+                            const SizedBox(height: 4.0), // 添加一点垂直间距
                           ],
                         ),
                       ),
@@ -161,7 +127,28 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
               ],
             ),
           ),
-          const Text("text"),
+          Stack(children: [
+            Container(
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [
+                    Colors.transparent,
+                    Color.fromARGB(255, 211, 15, 15),
+                  ])),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(children: [
+                  // 电影简介
+                  Text(
+                    movieDetail?.overview ?? "",
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  const Text("test2"),
+                ])),
+          ]),
         ],
       ),
     );
