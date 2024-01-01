@@ -11,7 +11,7 @@ class ApiConfig {
 
   static const String tmdbApiImageSizeBackdrop = 'w1280';
 
-  static const String tmdbApiImageSizePoster = 'w154';
+  static const String tmdbApiImageSizePoster = 'w342';
 
   static const String tmdbApiImageSizeProfile = 'w185';
 
@@ -29,5 +29,9 @@ class ApiConfig {
 
   static String tmdbApiMovieBackdrop(String movieId) {
     return '$tmdbApiImageBaseUrl$tmdbApiImageSizeBackdrop$movieId';
+  }
+
+  static String tmdbApiMovieRecommendation(String movieId) {
+    return '${tmdbApiBaseUrl}movie/$movieId/recommendations?api_key=$tmdbApiKey';
   }
 }
