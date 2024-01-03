@@ -172,7 +172,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const VideoPlayerScreen(
+                              builder: (context) => const ChewieDemo(
                                   videoUrl:
                                       'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'),
                             ),
